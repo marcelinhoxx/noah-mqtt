@@ -37,7 +37,7 @@ func newClient(serverUrl string, username string, password string) *Client {
 			Transport:     nil,
 			CheckRedirect: nil,
 			Jar:           jar,
-			Timeout:       10 * time.Second,
+			Timeout:       60 * time.Second,
 		},
 		serverUrl: serverUrl,
 		username:  username,
